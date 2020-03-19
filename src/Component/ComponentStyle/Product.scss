@@ -1,0 +1,79 @@
+body {
+    background-color: black;
+}
+
+.productCard {
+    display: grid;
+    height: 70vh;
+
+    >div:nth-child(1n) {
+        background-size: cover !important;
+        background-position: top center !important;
+        
+
+        &:hover {
+            >div:nth-child(1) {
+                visibility: visible;
+                border-bottom: 1.2vh solid red;
+            }
+        }
+
+        >div:nth-child(1) {
+            flex-direction: column;
+            visibility: hidden;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-size: cover !important;
+            background-position: top center !important;
+            height: 68.8vh;
+            background: linear-gradient(
+                     rgba(0,0,0, .5), 
+                     rgba(0,0,0, .5))
+        }
+    }
+
+    h2 {
+        width: 98%;
+        opacity: .8;
+
+        a {
+            text-decoration: none;
+            color: white;
+        }
+
+        &:hover {
+            text-shadow: 2px 2px 2px red;
+            cursor: pointer;
+        }
+    }
+
+    button {
+        border: none;
+        background-color: none;
+        color: red;
+        background: none;
+    }
+
+    h1 {
+        border: 1px solid red;
+        padding: 0 15px;
+        font-size: 50px;
+
+        &:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+    }
+
+    h3 {
+        border: 1px solid red;
+        padding: 15px 15px;
+        font-size: 20px;
+
+        &:hover {
+            transform: scale(1.2);
+            cursor: pointer;
+        }
+    }
+}

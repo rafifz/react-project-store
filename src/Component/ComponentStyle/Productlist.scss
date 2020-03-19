@@ -1,0 +1,25 @@
+.cover {
+    display: flex;
+    align-items: flex-end;
+    color: white;
+    background-image: url('../image/EM212-collection_1600x.webp');
+    background-size: cover;
+    background-position: center top;
+    height: 70vh;
+    font-size: 20px;
+    h1{
+        margin: 10px 20px;
+        font-size: 2.5rem;
+    }
+}
+.containerlist{
+    text-align: center;
+    color: red;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+@media (max-width: 1050px){
+    .containerlist{
+        grid-template-columns: 1fr 1fr;
+    }
+}

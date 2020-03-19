@@ -1,0 +1,47 @@
+.modalContainer{
+    color: white;
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background-color: rgba(158, 2, 2, 0.2);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.modalProduct{
+    background-color: black;
+    display: flex;
+    img{
+        width: 350px;
+    }
+    p{
+        width: 350px;
+    }
+    text-align: center;
+    >div:nth-child(2){
+        padding-top: 20px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+        background-color: rgb(0, 0, 0);
+        .button{
+            button{
+                background-color: transparent;
+                color: red;
+                border: 1px solid red;
+                padding: 5px 15px;
+                margin-left: 15px;
+                &:hover{
+                    background-color: rgba(255, 255, 255, .1);
+                    cursor: pointer;
+                }
+            }
+        }
+    }
+}
+@media(max-width:715px){
+    .modalProduct{
+        display: block;
+    }
+}
